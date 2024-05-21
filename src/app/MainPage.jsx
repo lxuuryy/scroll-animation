@@ -18,7 +18,7 @@ export default MainPage
 const VideoSection = ({imageUrl, title, header, text, click}) => {
    
     return (
-        <div className='relative h-[100vh] md:h-[150vh] '>
+        <div className='elative h-[100vh] md:h-[150vh] '>
             <Video imageUrl={imageUrl}/>
 
             <Content title={title} header={header}/>
