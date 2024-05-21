@@ -1,6 +1,8 @@
+'use client'
 import Image from "next/image";
 import MainPage from "./MainPage";
 import Lenis from 'lenis'
+import React, {useRef} from "react";
 
 
 export default function Home() {
