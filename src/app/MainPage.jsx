@@ -18,7 +18,7 @@ export default MainPage
 const VideoSection = ({imageUrl, title, header, text, click}) => {
    
     return (
-        <div className='elative h-[100vh] md:h-[150vh] '>
+        <div className='relative h-[100vh] md:h-[150vh] '>
             <Video imageUrl={imageUrl}/>
 
             <Content title={title} header={header}/>
@@ -57,7 +57,7 @@ const Content = ({title, header}) => {
 
     })
 
-    const moveUp = useTransform(scrollYProgress, [0, 1], [200, -200])
+    const moveUp = useTransform(scrollYProgress, [0, 1], [400, -400])
     const opacity = useTransform(scrollYProgress, [0.40, 0.5, 0.75], [0, 1, 0]);
 
     return (
